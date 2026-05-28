@@ -1,0 +1,82 @@
+'use client'
+
+import React from 'react'
+import { Mail, Phone, MapPin, Github, Linkedin, Download } from 'lucide-react'
+
+const Hero = () => {
+  return (
+    <section id="home" className="min-h-screen flex items-center justify-center pt-20">
+      <div className="container mx-auto px-4 py-20">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="animate-fade-in">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              <span className="gradient-text">Muhammad Abdullah Shahzad</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
+              Software Engineer & AI/ML Developer
+            </p>
+            <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+              Passionate about building intelligent full-stack applications. Experienced in React, FastAPI, and .NET with a strong focus on AI/ML.
+            </p>
+
+            {/* Contact Info */}
+            <div className="flex flex-wrap justify-center gap-4 mb-8 text-gray-600 dark:text-gray-400">
+              <div className="flex items-center gap-2">
+                <Phone size={18} />
+                <span>+92 300 7553490</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin size={18} />
+                <span>Lahore, Pakistan</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Mail size={18} />
+                <span>mabdullahshahzad10@gmail.com</span>
+              </div>
+            </div>
+
+            {/* Social Links */}
+            <div className="flex justify-center space-x-6 mb-8">
+              <a
+                href="https://github.com/abdullahShahzad-512"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors hover-lift"
+              >
+                <Github size={24} className="text-gray-700 dark:text-gray-300" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/muhammad-abdullah-shahzad135/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors hover-lift"
+              >
+                <Linkedin size={24} className="text-gray-700 dark:text-gray-300" />
+              </a>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="#projects"
+                className="px-8 py-3 text-white rounded-lg bg-gradient-to-r from-purple-900 to-blue-900 hover:from-purple-600 hover:to-blue-600 transition-colors hover:scale-105 font-bold shadow-md"
+              >
+                View My Projects
+              </a>
+
+              <a
+                href="#contact"
+                className="px-8 py-3 font-bold  text-white  rounded-lg bg-gradient-to-r from-purple-900 to-blue-900 hover:from-purple-600 hover:to-blue-600 transition-colors hover:scale-105 shadow-md"
+              >
+                Get In Touch
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default Hero 
