@@ -9,7 +9,7 @@ const Contact = () => {
       icon: <Mail className="text-blue-600 dark:text-blue-400" size={20} />,
       label: 'Email',
       value: 'mabdullahshahzad10@gmail.com',
-      link: 'mailto:mabdullahshahzad10@gmail.com'
+      link: 'https://mail.google.com/mail/?view=cm&fs=1&to=mabdullahshahzad10@gmail.com&su=AI%2FML%20and%20Software%20Engineering%20Opportunity%20-%20Muhammad%20Abdullah%20Shahzad&body=Hello%20Muhammad%20Abdullah,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20was%20impressed%20by%20your%20work%20in%20AI%2FML%20and%20software%20engineering.%0D%0A%0D%0AI%20would%20love%20to%20discuss%20a%20potential%20opportunity.%20Please%20find%20some%20initial%20details%20below:%0D%0A-%20Project%20Type:%0D%0A-%20Timeline:%0D%0A-%20Budget:%0D%0A%0D%0ALooking%20forward%20to%20your%20response.%0D%0A%0D%0AKind%20regards,%0D%0A[Your%20Name]'
     },
     {
       icon: <Phone className="text-green-600 dark:text-green-400" size={20} />,
@@ -68,6 +68,8 @@ const Contact = () => {
                       {item.link ? (
                         <a 
                           href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
                         >
                           {item.value}
@@ -123,7 +125,8 @@ const Contact = () => {
                 Let's build something amazing together!
               </p>
               <a 
-                href="mailto:mabdullahshahzad10@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=mabdullahshahzad10@gmail.com&su=AI%2FML%20and%20Software%20Engineering%20Opportunity%20-%20Muhammad%20Abdullah%20Shahzad&body=Hello%20Muhammad%20Abdullah,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20was%20impressed%20by%20your%20work%20in%20AI%2FML%20and%20software%20engineering.%0D%0A%0D%0AI%20would%20love%20to%20discuss%20a%20potential%20opportunity.%20Please%20find%20some%20initial%20details%20below:%0D%0A-%20Project%20Type:%0D%0A-%20Timeline:%0D%0A-%20Budget:%0D%0A%0D%0ALooking%20forward%20to%20your%20response.%0D%0A%0D%0AKind%20regards,%0D%0A[Your%20Name]"
+                target='_blank'
                 className="inline-flex items-center space-x-2 px-6 py-3 bg-white text-blue-600 rounded-lg hover:bg-gray-100 dark:bg-gray-100 dark:hover:bg-gray-200 transition-colors font-medium hover-lift"
               >
                 <Mail size={20} />
